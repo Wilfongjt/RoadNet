@@ -68,7 +68,6 @@ public class Feature extends ArrayList<Coordinate> {
     public MBR getMBR() {
         MBR mbr = new MBR();
         for (Coordinate c : this) {
-
             mbr.add(c);
         }
         return mbr;
