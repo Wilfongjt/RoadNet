@@ -9,7 +9,7 @@ import java.awt.Graphics;
  * @author jameswilfong
  */
 /**
- * MBR is a list of
+ * MBR is a list of two coordinates
  */
 public class MBR extends Feature {
 
