@@ -97,11 +97,12 @@ public class Segment extends Feature {
 
     public String toString() {
         // {"idx":[idx],"feature":[coordinates],"color":[color],"speed":[speed],"}
-        String rc = "{\"idx\":[idx],\"speed\":[speed],\"tailingspeed\":[tailingspeed],\"occupied\":[occupied],\"coordinates\":[[features]],\"color\":\"[color]\"}";
+        String rc = "{\"idx\":[idx],\"speed\":[speed],\"tailingspeed\":[tailingspeed],\"occupied\":[occupied],[mbr],\"coordinates\":[[features]],\"color\":\"[color]\"}";
         rc = rc.replace("[idx]", "" + getIdx())
                 .replace("[speed]", "" + this.getPostedSpeed())
                 .replace("[tailingspeed]", "" + this.getTailingSpeed())
                 .replace("[occupied]", "" + this.isOccupied())
+                //.replace("[mbr]", getMBR().toString())
                 .replace("[features]", super.toString());
                 //.replace("[color]", "" + getColor().getRGB());
 
